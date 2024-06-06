@@ -11,8 +11,8 @@ function getPath(path: string) {
 
 /**
  * Normalize a path by removing leading and trailing slashes.
- * @param {string} path - The path to normalize.
- * @returns {string} - The normalized path.
+ * @param path - The path to normalize.
+ * @returns - The normalized path.
  */
 function normalizePath(path: string) {
   return path.replace(/^\/+|\/+$/g, "");
@@ -20,9 +20,9 @@ function normalizePath(path: string) {
 
 /**
  * Match two paths, ignoring leading and trailing slashes.
- * @param {string} path1 - The first path.
- * @param {string} path2 - The second path.
- * @returns {boolean} - True if the paths match, false otherwise.
+ * @param path1 - The first path.
+ * @param path2 - The second path.
+ * @returns - True if the paths match, false otherwise.
  */
 function matchPaths(path1: string, path2: string) {
   const normalizedPath1 = normalizePath(path1);

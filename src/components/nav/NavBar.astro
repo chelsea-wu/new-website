@@ -1,10 +1,10 @@
 ---
 import NavLink from "./NavLink.astro"
-import nav_links from "../../utils/nav_links.json"
+import nav_links from "./nav_links.json"
 import {getPath, matchPaths} from "../../utils/path"
 
 const {pathname} = Astro.url;
-const background_color = nav_links.find(link => matchPaths(getPath(link.to), pathname)).background ?? "";
+const background_color = nav_links.find(link => matchPaths(getPath(link.to), pathname))?.background ?? "";
 ---
 
 <nav style={{backgroundColor: background_color}}>
