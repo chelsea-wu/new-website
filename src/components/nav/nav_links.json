@@ -1,18 +1,15 @@
 [
   {
     "to": "/",
-    "title": "Home",
-    "background": "#BCB4FF"
+    "title": "Home"
   },
   {
     "to": "/projects",
-    "title": "Projects",
-    "background": "#EDB4F8"
+    "title": "Projects"
   },
   {
     "to": "/hobbies",
-    "title": "Hobbies",
-    "background": "#FFB985"
+    "title": "Hobbies"
   },
   {
     "to": "/resume.pdf",

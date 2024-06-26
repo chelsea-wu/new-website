@@ -4,10 +4,9 @@ import nav_links from "./nav_links.json"
 import {getPath, matchPaths} from "../../utils/path"
 
 const {pathname} = Astro.url;
-const background_color = nav_links.find(link => matchPaths(getPath(link.to), pathname))?.background ?? "";
 ---
 
-<nav style={{backgroundColor: background_color}}>
+<nav>
     <ul>
         {nav_links.map(link => ( 
             <li>
@@ -27,6 +26,7 @@ nav{
     box-sizing: border-box;
     font-family: Josefin Sans;
     z-index: 10;
+    background-color: var(--nav-background-color);
 }
 
 ul{
